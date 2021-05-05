@@ -8,33 +8,33 @@ CalendarConverter - Allows converting Y/M/D dates between any pair of a set of 1
 
 =begin code :lang<raku>
 use CalendarConverter;
-my $c = CalendarConverter.new: :in<gregorian>, :out<julian>;
+my $c = CalendarConverter.new: :in<gregorian>, :out<julian>;0
 say $c.convert: :2021year; # OUTPUT: yyyy/m/d
 say $c.convert: :2021year, :10month, :15day; # OUTPUT: yyyy/m/d
 =end code
 
 =head1 DESCRIPTION
 
-CalendarConverter uses the algorithms of E. G. Richards to
+B<CalendarConverter> uses the algorithms of E. G. Richards to
 convert dates, in Y/M/D form, between any two of 15 I<regular> calendars.
 
-Calendars and name keys (from Ref. 1, Table 22.1):
+Calendars and name keys (from Ref. 1, Table 22.1, p. 290):
 
 =begin table :caption<Egyptian calendars>
 No. | Calendar name | Key | Era
 ----+---------------+-----+----------
- 1  | Macedonian    | mac | Alexander
- 2  | Syrian        | syr | Alexander
- 3  | Julian Roman  | jul | Christian
- 4  | Gregorian     | gre | Christian
+ 1  | Egyptian      | egy | Nabonassar
+ 2  | Armenian      | arm | Armenian 
+ 3  | Khwarizmian   | khw | Yazdegerd
+ 4  | Persian       | per | Yaxdegerd
 =end table
 
 =begin table :caption<Alexandrian calendars>
 No. | Calendar name | Key | Era
 ----+---------------+-----+----------
- 5  | Macedonian    | mac | Alexander
- 6  | Syrian        | syr | Alexander
- 7  | Julian Roman  | jul | Christian
+ 5  | Ethiopic      | eth | Incarnation
+ 6  | Coptic        | cop | Diocletian
+ 7  | Republican    | rep | Republican
 =end table
 
 =begin table :caption<Julian calendars>
@@ -49,15 +49,15 @@ No. | Calendar name | Key | Era
 =begin table :caption<Islamic calendars>
 No. | Calendar name | Key | Era
 ----+---------------+-----+----------
-12  | Macedonian    | mac | Alexander
-13  | Syrian        | syr | Alexander
+12  | Islamic A     | isa | Hegira   
+13  | Islamic B     | isb | Hegira   
 =end table
 
 =begin table :caption<Modern calendars>
 No. | Calendar name | Key | Era
 ----+---------------+-----+----------
-14  | Macedonian    | mac | Alexander
-15  | Syrian        | syr | Alexander
+14  | Bahai         | bah | Bahai    
+15  | Saka          | sak | Saka     
 =end table
 
 =head2 Planned features
