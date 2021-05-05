@@ -1,0 +1,81 @@
+=begin pod
+
+=head1 NAME
+
+CalendarConverter - Allows converting Y/M/D dates between any pair of a set of 15 I<regular> calendars
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+use CalendarConverter;
+my $c = CalendarConverter.new: :in<gregorian>, :out<julian>;
+say $c.convert: :2021year; # OUTPUT: yyyy/m/d
+say $c.convert: :2021year, :10month, :15day; # OUTPUT: yyyy/m/d
+=end code
+
+=head1 DESCRIPTION
+
+CalendarConverter uses the algorithms of E. G. Richards to
+convert dates, in Y/M/D form, between any two of 15 I<regular> calendars.
+
+Calendars and name keys (from Ref. 1, Table 22.1):
+
+=begin table :caption<Egyptian calendars>
+No. | Calendar name | Key | Era
+----+---------------+-----+----------
+ 1  | Macedonian    | mac | Alexander
+ 2  | Syrian        | syr | Alexander
+ 3  | Julian Roman  | jul | Christian
+ 4  | Gregorian     | gre | Christian
+=end table
+
+=begin table :caption<Alexandrian calendars>
+No. | Calendar name | Key | Era
+----+---------------+-----+----------
+ 5  | Macedonian    | mac | Alexander
+ 6  | Syrian        | syr | Alexander
+ 7  | Julian Roman  | jul | Christian
+=end table
+
+=begin table :caption<Julian calendars>
+No. | Calendar name | Key | Era
+----+---------------+-----+----------
+ 8  | Macedonian    | mac | Alexander
+ 9  | Syrian        | syr | Alexander
+10  | Julian Roman  | jul | Christian
+11  | Gregorian     | gre | Christian
+=end table
+
+=begin table :caption<Islamic calendars>
+No. | Calendar name | Key | Era
+----+---------------+-----+----------
+12  | Macedonian    | mac | Alexander
+13  | Syrian        | syr | Alexander
+=end table
+
+=begin table :caption<Modern calendars>
+No. | Calendar name | Key | Era
+----+---------------+-----+----------
+14  | Macedonian    | mac | Alexander
+15  | Syrian        | syr | Alexander
+=end table
+
+=head2 Planned features
+
+=item subclass Raku Date for a Date::Calendar for any of the 15 calendars
+
+=head2 References
+
+1. I<Mapping Time: The Calendar and Its History>, E. G. Richards, The Oxford University Press, 2000.
+
+=head1 AUTHOR
+
+Tom Browder <tbrowder@cpan.org>
+
+=head1 COPYRIGHT and LICENSE
+
+Copyright E<0x00a9> 2021 Tom Browder
+
+This library is free software; you can redistribute it or modify it under the Artistic License 2.0.
+
+=end pod
