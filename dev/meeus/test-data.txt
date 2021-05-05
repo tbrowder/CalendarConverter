@@ -1,0 +1,55 @@
+# data from Jean Meeus' "Astronomical Algorithms"
+#
+# All data have been checked against NASA's Time
+# Conversion Tool.
+#
+# Calendar date   Julian date Calendar type
+# (y/m/d)          (jd)       (G or J, default: Gregorian)
+# from p. 62 (16 data points)
+ 2000 jan  1.5 2_451_545.0
+ 1999 jan  1.0 2_451_179.5
+ 1987 jan 27.0 2_446_822.5
+ 1987 jun 19.5 2_446_966.0
+ 1988 jan 27.0 2_447_187.5
+
+ 1988 jun 19.5 2_447_332.0
+ 1900 jan  1.0 2_415_020.5
+ 1600 jan  1.0 2_305_447.5
+ 1600 dec 31.0 2_305_812.5
+  837 apr 10.3 2_026_871.8 Julian
+
+ -123 dec 31.0 1_676_496.5 Julian
+ -122 jan  1.0 1_676_497.5 Julian
+-1000 jul 12.5 1_356_001.0 Julian
+-1000 feb 29.0 1_355_866.5 Julian
+-1001 aug 17.9 1_355_671.4 Julian
+
+-4712 jan  1.5         0.0 Julian # no. 16 
+
+# Example 7.a, p. 61 (no. 17)
+#   input was calendar date
+# NOTE: This test was entered twice, but with a difference
+#       of 0.5 for the JD. The correct JD seems to be this one
+#       as used in example 7.c on p. 64. 
+ 1957 oct  4.81 2_436_116.31 # launch of Sputnik 1
+
+# Example 7.b, p. 61 (no. 18)
+#   input was calendar date specifically in the Julian calendar
+  333 jan 27.5  1_842_713.0  Julian
+
+# Example 7.c, p. 64 (no. 19)
+#   input was JD 
+ 1957 oct  4.81 2_436_116.31 # launch of Sputnik 1
+
+# unnumbered exercises, p. 64
+#   input was JD 
+  333 jan 27.5  1_842_713.0  Julian # (no. 20) 
+ -584 may 28.63 1_507_900.13 Julian # (no. 21)
+
+# Example 7.d, p. 64
+#   input was JD, 
+ 1910 apr 20.0  2_418_781.5 # (no. 22) 
+ 1986 feb  9.0  2_446_470.5 # (no. 23)
+
+
+

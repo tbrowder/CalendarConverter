@@ -1,0 +1,53 @@
+# data from Peter Baum
+#
+# All post-Julian calendar data have been checked against NASA's Time
+# Conversion Tool.
+#
+# All pre-Gregorian calendar JD data have been checked against NASA's Time
+# Conversion Tool as Julian dates B.C. and A.D. Post-Julian JD data have been
+# checked against Gregorian dates A.D.
+#
+# Calendar date   Julian date Calendar type
+# (y/m/d)          (jd)       (G or J, default: Gregorian)
+
+# Table 2       JD for Julian calendar date date (columns 1, 2, 3, and 4)
+-4713  11 24.0  -38.5       Julian # middle of JD before Gregorian reference
+-4713  11 24.5  -38.0       Julian # Gregorian date of JD reference
+-4713  11 25.0  -37.5       Julian # middle of JD reference day (midnight)
+-4712   1  1.0   -0.5       Julian # middle of the day before JD reference
+-4712   1  1.5    0.0       Julian # Julian date of JD reference
+-4712   1  2.0    0.5       Julian # middle of JD reference day
+    0   1  1.0    1721057.5 Julian # The first day of 1 B.C.
+    0   2 29.0    1721116.5 Julian # Rata Die = -306
+    0   3  1.0    1721117.5 Julian # Rata Die = -305
+    0  12 31.0    1721422.5 Julian # Rata Die = 0
+    1   1  1.0    1721423.5 Julian # Rata Die = 1
+ 1582  10  4.0    2299159.5 Julian # last day before Gregorian reform
+ 1582  10 15.0    2299170.5 Julian # first day of Gregorian reform
+ 1840  12 31.0    2393482.5 Julian # M programming language reference
+ 1858  11 17.0    2400012.5 Julian # Modified Julian Day 0.0
+ 1900   1  1.0    2415032.5 Julian
+ 1901   1  1.0    2415398.5 Julian # start of the 20th century
+ 1970   1  1.0    2440600.5 Julian # Unix (POSIX) reference
+ 1980   1  1.0    2444252.5 Julian # PC (DOS) reference
+
+# Table 2       JD for Gregorian calendar date (columns 1, 2, 3, and 5)
+-4713  11 24.0   -0.5       # middle of JD before Gregorian reference
+-4713  11 24.5    0.0       # Gregorian date of JD reference
+-4713  11 25.0    0.5       # middle of JD reference day (midnight)
+-4712   1  1.0   37.5       # middle of the day before JD reference
+-4712   1  1.5   38.0       # Julian date of JD reference
+-4712   1  2.0   38.5       # middle of JD reference day
+    0   1  1.0    1721059.5 # The first day of 1 B.C.
+    0   2 29.0    1721118.5 # Rata Die = -306
+    0   3  1.0    1721119.5 # Rata Die = -305
+    0  12 31.0    1721424.5 # Rata Die = 0
+    1   1  1.0    1721425.5 # Rata Die = 1
+ 1582  10  4.0    2299149.5 # last day before Gregorian reform
+ 1582  10 15.0    2299160.5 # first day of Gregorian reform
+ 1840  12 31.0    2393470.5 # M programming language reference
+ 1858  11 17.0    2400000.5 # Modified Julian Day 0.0
+ 1900   1  1.0    2415020.5
+ 1901   1  1.0    2415385.5 # start of the 20th century
+ 1970   1  1.0    2440587.5 # Unix (POSIX) reference
+ 1980   1  1.0    2444239.5 # PC (DOS) reference

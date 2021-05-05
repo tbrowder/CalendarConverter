@@ -1,0 +1,43 @@
+The algorithms and programs in this directory are
+based on the book by E. G. Richards, "Mapping Time: The Calendar and Its History,"
+2000, The Oxford Press.
+
+Notes herein are supplemental to the README* in the parent
+directory and may supersede some information based on
+testing.
+
+The issue is Meeus and the basis for his tests:
+what Julian Day number are we using for DateTime
+which is a proleptic Gregorian calendar?
+
+Mr. Richards makes a case for working with JDN 
+but with Gregorian dates, so that seems to
+be the best path ahead.
+
+His mathematical notes from Chapter 23:
+
+All numbers are whole numbers (except in algorithm H).
+
+Division, denoted by '/', is "invariably" integral division.
+Raku's equivalent is 'div';
+
+The 'mod' (modulo) function, e.g., MOD(a,b) means integral
+division A/B and return the integral remainder, if any, zero
+otherwise. The Raku equivalent is: 'A mod B' where the arguments
+and return value are integers.
+
+We use the 'min' function to select the minimum of a pair
+of numbers. Raku has that routine.
+
+Notation and symbols
+--------------------
+
+Richards' formulae refer to D/M/Y as the given
+calendar, D'/M'/Y' as the computational calendar,
+and J as the common and unabiguasly defined Julian day number (J)
+for both.
+
+For this implementation we shall use Dp/Mp/Yp as the symbols for
+the computational calendar (and suffix other vars with 'p' as well).
+
+
