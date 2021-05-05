@@ -12,12 +12,25 @@
   "name": "CalendarConverter",
   "perl": "6.d",
   "provides": {
-    "CalendarConverter": "lib/CalendarConverter.rakumod"
+    "CalendarConverter": "lib/CalendarConverter.rakumod",
+    "CalendarConverter::Calendar": "lib/CalendarConverter/Calendar.rakumod",
+    "CalendarConverter::Calendars": "lib/CalendarConverter/Calendars.rakumod"
   },
   "resources": [
   ],
   "source-url": "https://github.com/tbrowder/CalendarConverter.git",
   "tags": [
+    "calendar",
+    "date",
+    "conversion",
+    "regular calendars",
+    "islamic",
+    "bahai",
+    "gregorian",
+    "julian",
+    "republican",
+    "saka",
+    "jewish"
   ],
   "test-depends": [
   ],
