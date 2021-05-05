@@ -92,5 +92,5 @@ COPYRIGHT and LICENSE
 
 Copyright © 2021 Tom Browder
 
-This library is free software; you can redistribute it or modify it under the Artistic License 2.0.
+This library is free software; you may redistribute or modify it under the Artistic License 2.0.
 
